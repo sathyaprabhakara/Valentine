@@ -80,7 +80,7 @@ export default function App() {
         <div className="ribbon shadow-sweet relative w-full rounded-[32px] border border-white/60 px-6 py-12 sm:px-12">
           <div className="mx-auto mb-6 flex items-center justify-center gap-3 text-sm font-semibold tracking-[0.4em] text-[#ff2d55]">
             <span className="h-2 w-2 rounded-full bg-[#ff2d55]"></span>
-            Valentine Mode
+            Sathya’s Valentine Mode
             <span className="h-2 w-2 rounded-full bg-[#ff2d55]"></span>
           </div>
           <h1 className="font-display text-4xl sm:text-5xl md:text-6xl">
