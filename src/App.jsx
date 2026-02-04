@@ -8,6 +8,7 @@ export default function App() {
   const [yesPos, setYesPos] = useState({ x: 120, y: 80 });
   const [noClicked, setNoClicked] = useState(false);
   const [message, setMessage] = useState('');
+  const sadGif = `${import.meta.env.BASE_URL}sad-baby.gif`;
 
   const hearts = useMemo(
     () =>
@@ -86,7 +87,7 @@ export default function App() {
             Will you be my Valentine?
           </h1>
           <p className="mx-auto mt-4 max-w-2xl text-base text-[#7d3048] sm:text-lg">
-            I made this just for you, with extra hearts and a tiny bit of mischief.
+            I made this just for you - with extra hearts, a touch of code, and a whole lot of Sathya 💗
           </p>
 
           <div
@@ -120,7 +121,15 @@ export default function App() {
 
           <div className="mt-6 min-h-[48px] text-xl font-semibold text-[#ff2d55]">
             {noClicked && (
-              <span className="animate-floaty font-script text-3xl">{message}</span>
+              <div className="flex flex-col items-center gap-4">
+                <span className="animate-floaty font-script text-3xl">{message}</span>
+                <img
+                  src={sadGif}
+                  alt="Sad baby"
+                  className="w-56 rounded-2xl shadow-lg"
+                  loading="lazy"
+                />
+              </div>
             )}
           </div>
         </div>
